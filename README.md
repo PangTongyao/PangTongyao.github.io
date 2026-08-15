@@ -2,4 +2,4 @@
 
 Static GitHub Pages site for [pangtongyao.github.io](https://pangtongyao.github.io/).
 
-Research direction: **Generative Models: Theory, Algorithm and Applications**.
+Research direction: **Generative Models: Theory, Algorithms and Applications**.
