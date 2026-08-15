@@ -3,8 +3,6 @@
   --academic-blue-dark: #224b8d;
   --text: #222222;
   --line: #aaaaaa;
-  --menu-bg: #f6f6f6;
-  --menu-line: #dddddd;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -12,14 +10,7 @@ body { margin: 0; padding: 0 16px 20px; background: #fff; color: var(--text); fo
 a { color: var(--academic-blue-dark); text-decoration: none; }
 a:hover { border-bottom: 1px dotted #777; }
 p { margin: 0 0 .8em; padding: 0; }
-.page-shell { width: min(1080px, 100%); display: grid; grid-template-columns: 170px minmax(0, 1fr); align-items: start; margin: 28px auto 0; }
-.layout-menu { position: sticky; top: 16px; background: var(--menu-bg); border: 1px solid var(--menu-line); padding: 12px 12px 16px; white-space: nowrap; }
-.menu-title { margin: 0 6px 12px; padding-bottom: 8px; border-bottom: 1px solid #c8c8c8; font-size: .94em; font-weight: 700; }
-.layout-menu nav { display: flex; flex-direction: column; align-items: flex-start; }
-.layout-menu nav a { line-height: 1.65; margin-left: 6px; color: var(--academic-blue); }
-.layout-menu nav a.current { color: #022b6d; border-bottom: 1px solid #777; }
-.menu-divider { margin: 13px 6px 10px; border-top: 1px solid #d0d0d0; }
-.external-nav a { font-size: .9em; }
+.page-shell { width: min(920px, 100%); margin: 28px auto 0; }
 .layout-content { min-width: 0; padding: 0 24px 60px; }
 .top-title { margin-bottom: 1.5em; padding-bottom: .2em; border-bottom: 3px double #808080; }
 .top-title h1 { margin: .5em 0 0; padding: 0 0 .12em; color: var(--academic-blue); font-size: 1.72em; line-height: 1.1; }
@@ -43,12 +34,7 @@ footer { display: flex; justify-content: space-between; gap: 24px; margin-top: 4
 footer a { color: #6f91a3; }
 @media (max-width: 760px) {
   body { padding: 0; font-size: 15px; }
-  .page-shell { display: block; margin-top: 0; }
-  .layout-menu { position: static; padding: 10px 16px; border-width: 0 0 1px; white-space: normal; }
-  .menu-title { display: none; }
-  .layout-menu nav { flex-direction: row; flex-wrap: wrap; gap: 2px 18px; }
-  .layout-menu nav a { margin-left: 0; line-height: 1.8; }
-  .menu-divider, .external-nav { display: none; }
+  .page-shell { margin-top: 0; }
   .layout-content { padding: 18px 20px 46px; }
   .profile { grid-template-columns: 160px minmax(0, 1fr); gap: 20px; }
   .profile-photo img { width: 160px; }
@@ -59,7 +45,6 @@ footer a { color: #6f91a3; }
   footer { display: block; }
 }
 @media print {
-  .layout-menu { display: none; }
-  .page-shell { display: block; width: 100%; }
+  .page-shell { width: 100%; }
   .layout-content { padding: 0; }
 }
