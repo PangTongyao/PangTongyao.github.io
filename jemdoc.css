@@ -27,6 +27,7 @@ ul, ol { margin: .2em 0 .9em; padding-top: 0; }
 ul { padding-left: 1.7em; list-style-type: square; }
 ol { padding-left: 2.05em; }
 li p { margin-bottom: .42em; }
+.biography-list li, .teaching-list li { margin-bottom: .24em; }
 .publication-list li { margin-bottom: .82em; padding-left: .12em; }
 .publication-list p { line-height: 1.38; }
 .more-publications { margin-top: 1.5em; }
